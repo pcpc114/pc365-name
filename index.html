@@ -43,7 +43,7 @@
 
 <!-- LCP 이미지(히어로 포스터) 프리로드: 최우선 다운로드 -->
 <link rel="preload" as="image" type="image/webp" href="download-520.webp"
-      imagesrcset="download-520.webp 520w, download.webp 825w"
+      imagesrcset="download-520.webp 520w, download.webp 768w"
       imagesizes="(max-width: 846px) 380px, 520px" fetchpriority="high">
 
 <!-- 본문 폰트 프리로드 (서브셋 후 각 40KB) : 글자 늦게 뜨는 현상 방지 -->
@@ -283,6 +283,12 @@ main:focus { outline: none; }
 }
 #topBtn.show { opacity: 1; visibility: visible; }
 
+.col-cta { margin-top: 22px; }
+.col-cta a { display: inline-block; padding: 13px 26px; border: 1px solid currentColor; border-radius: 6px; font-weight: 700; font-size: 15px; }
+.col-cta a:hover { background: currentColor; }
+.col.right .col-cta a:hover { color: var(--card-dark); }
+.col.left  .col-cta a:hover { color: #fff; }
+
 .col ul { margin-top: 14px; }
 .col ul li { position: relative; padding-left: 18px; margin-bottom: 9px; line-height: 1.75; }
 .col ul li::before { content: ''; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .5; }
@@ -387,7 +393,10 @@ main:focus { outline: none; }
       },
       "image": {
         "@id": "https://SET-DOMAIN-HERE/#logo"
-      }
+      },
+      "sameAs": [
+        "https://t.me/pc365s"
+      ]
     },
     {
       "@type": "WebSite",
@@ -432,8 +441,8 @@ main:focus { outline: none; }
       "@id": "https://SET-DOMAIN-HERE/#primaryimage",
       "url": "https://SET-DOMAIN-HERE/download.jpg",
       "contentUrl": "https://SET-DOMAIN-HERE/download.jpg",
-      "width": 825,
-      "height": 1024,
+      "width": 768,
+      "height": 1376,
       "caption": "성인PC 창업 상담 PC365"
     },
     {
@@ -564,7 +573,7 @@ main:focus { outline: none; }
           <li>새로운 시작의 기준</li>
         </ul>
         <div class="hero-btns">
-          <a class="primary" href="#consult">창업 상담하기</a>
+          <a class="primary" href="https://t.me/pc365s" target="_blank" rel="noopener">창업 상담하기</a>
           <a href="#prepare">준비 과정 보기</a>
         </div>
       </div>
@@ -572,12 +581,12 @@ main:focus { outline: none; }
 
     <section class="image-banner">
         <picture>
-          <source type="image/webp" srcset="download-520.webp 520w, download.webp 825w"
+          <source type="image/webp" srcset="download-520.webp 520w, download.webp 768w"
                   sizes="(max-width: 846px) 380px, 520px">
           <img class="bb-logo" src="download-520.jpg"
-               srcset="download-520.jpg 520w, download.jpg 825w"
+               srcset="download-520.jpg 520w, download.jpg 768w"
                sizes="(max-width: 846px) 380px, 520px"
-               width="825" height="1024" fetchpriority="high" decoding="async" alt="성인PC 창업 안내 PC365 포스터">
+               width="768" height="1376" fetchpriority="high" decoding="async" alt="PC365 성인PC 커뮤니티 안내 포스터">
         </picture>
     </section>
   </div>
@@ -780,6 +789,7 @@ main:focus { outline: none; }
         <div class="col right">
           <h2>고민하는 시간은 낭비가 아닙니다</h2>
           <p>창업을 고민하는 시간은 결코 낭비가 아닙니다. 충분히 알아보고, 비교하고, 내 상황에 맞는 방향을 찾는 과정이 있어야 더 후회 없는 선택을 할 수 있습니다.</p>
+          <p class="col-cta"><a href="https://t.me/pc365s" target="_blank" rel="noopener">텔레그램으로 상담하기</a></p>
         </div>
       </div>
     </div>
@@ -840,7 +850,7 @@ main:focus { outline: none; }
       <source type="image/webp" srcset="logo-header-500.webp">
       <img src="logo-header-500.png" width="500" height="150" loading="lazy" decoding="async" alt="PC365 로고">
     </picture></a>
-    <p class="foot-info">상호 : PC365 &nbsp;&middot;&nbsp; 성인PC 창업 상담 &middot; 매장 구성 &middot; 운영 방향 컨설팅<br>당신의 새로운 시작을 응원합니다.<br>COPYRIGHT &copy; PC365 ALL RIGHTS RESERVED.</p>
+    <p class="foot-info">상호 : PC365 &nbsp;&middot;&nbsp; 성인PC 창업 상담 &middot; 매장 구성 &middot; 운영 방향 컨설팅<br>상담 : <a href="https://t.me/pc365s" target="_blank" rel="noopener">텔레그램 @pc365s</a><br>당신의 새로운 시작을 응원합니다.<br>COPYRIGHT &copy; PC365 ALL RIGHTS RESERVED.</p>
   </div>
 </footer>
 
