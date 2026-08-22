@@ -25,21 +25,21 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PC365">
 <meta property="og:title" content="성인PC 창업 상담 · 매장 구성 · 운영 컨설팅 | PC365">
-<meta property="og:description" content="프라이빗한 공간, 안정적인 운영, 새로운 시작의 기준 — PC365. 성인PC 창업의 준비 과정을 함께 살펴봅니다.">
+<meta property="og:description" content="프라이빗한 공간, 안정적인 운영, 새로운 시작의 기준 ― PC365. 성인PC 창업의 준비 과정을 함께 살펴봅니다.">
 <meta property="og:url" content="https://pc365.name/">
 <meta property="og:image" content="https://pc365.name/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:alt" content="PC365 성인PC 창업 상담 — 준비의 차이가 매장의 미래를 만듭니다">
+<meta property="og:image:alt" content="PC365 성인PC 창업 상담 ― 준비의 차이가 매장의 미래를 만듭니다">
 <meta property="og:locale" content="ko_KR">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="성인PC 창업 상담 · 매장 구성 · 운영 컨설팅 | PC365">
-<meta name="twitter:description" content="프라이빗한 공간, 안정적인 운영, 새로운 시작의 기준 — PC365. 성인PC 창업의 준비 과정을 함께 살펴봅니다.">
+<meta name="twitter:description" content="프라이빗한 공간, 안정적인 운영, 새로운 시작의 기준 ― PC365. 성인PC 창업의 준비 과정을 함께 살펴봅니다.">
 <meta name="twitter:image" content="https://pc365.name/og-image.jpg">
-<meta name="twitter:image:alt" content="PC365 성인PC 창업 상담 — 준비의 차이가 매장의 미래를 만듭니다">
+<meta name="twitter:image:alt" content="PC365 성인PC 창업 상담 ― 준비의 차이가 매장의 미래를 만듭니다">
 
 <!-- LCP 이미지(히어로 포스터) 프리로드: 최우선 다운로드 -->
 <link rel="preload" as="image" type="image/webp" href="download-520.webp"
@@ -127,9 +127,11 @@ main:focus { outline: none; }
 .logo a { display: inline-flex; align-items: center; min-height: 48px; }
 .logo img { height: 78px; width: auto; display: block; }   /* 헤더 로고 이미지 */
 /* home 메뉴 (원본 GnbMenu: Maplestory 16px 흰색 중앙) */
-.gnb { margin-top: 26px; }
-.gnb a { font-family: var(--font); font-weight: 400; font-size: 16px; color: #fff; padding: 6px 4px; }
+.gnb { margin-top: 26px; display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; }
+.gnb a { font-family: var(--font); font-weight: 400; font-size: 16px; color: #fff; padding: 8px 14px; border-radius: 4px; }
 .gnb a:hover { opacity: .7; }
+.gnb a[aria-current="page"] { color: #ecd9b0; background: rgba(201,162,106,.12); font-weight: 700; }
+.aside-menu li a[aria-current="page"] { color: #ecd9b0; font-weight: 700; }
 
 /* 햄버거 (원본과 동일: 데스크탑 숨김 / 모바일에서만 표시) */
 .hamburger {
@@ -273,6 +275,9 @@ main:focus { outline: none; }
 #footer { background: #000; }
 #footer .inner { max-width: var(--max-width); margin: 0 auto; border-top: 1px solid #dedede; padding: 42px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
 #footer .foot-logo img { width: 500px; max-width: 88%; height: auto; display: block; }
+#footer .foot-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin: 4px 0 18px; }
+#footer .foot-nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 14px; font-size: 14px; color: #b9ac95; }
+#footer .foot-nav a:hover { color: #ecd9b0; }
 #footer .foot-info { font-size: 12px; color: #888; text-align: center; line-height: 1.7; }
 #footer .foot-info a {
   display: inline-flex; align-items: center; justify-content: center;
@@ -538,7 +543,7 @@ main:focus { outline: none; }
       <source type="image/webp" srcset="logo-header-260.webp 1x, logo-header-500.webp 2x">
       <img src="logo-header-260.png" srcset="logo-header-260.png 1x, logo-header-500.png 2x" width="260" height="78" decoding="async" alt="PC365 성인PC 창업 상담 로고">
     </picture></a></p>
-    <nav class="gnb" aria-label="주 메뉴"><a href="/">home</a></nav>
+    <nav class="gnb" aria-label="주 메뉴"><a href="/" aria-current="page">home</a><a href="/jinsang/">진상</a><a href="/danso/">단속</a><a href="/yoyul/">요율</a><a href="/singo/">신고</a></nav>
     <!-- 햄버거: 원본과 동일하게 데스크탑에서는 숨김, 모바일에서만 표시 -->
     <button class="hamburger" id="asideOpen" aria-label="메뉴 열기" aria-expanded="false" aria-controls="aside">
       <span></span><span></span><span></span>
@@ -555,7 +560,11 @@ main:focus { outline: none; }
   </div>
   <nav aria-label="모바일 메뉴">
     <ul class="aside-menu">
-      <li><a href="/">home</a></li>
+      <li><a href="/" aria-current="page">home</a></li>
+      <li><a href="/jinsang/">진상</a></li>
+      <li><a href="/danso/">단속</a></li>
+      <li><a href="/yoyul/">요율</a></li>
+      <li><a href="/singo/">신고</a></li>
     </ul>
   </nav>
 </aside>
@@ -816,7 +825,7 @@ main:focus { outline: none; }
     </div>
   </section>
 
-  <!-- ================= 자주 묻는 질문 (FAQ) — 구조화 데이터 FAQPage와 텍스트 일치 ================= -->
+  <!-- ================= 자주 묻는 질문 (FAQ) ― 구조화 데이터 FAQPage와 텍스트 일치 ================= -->
   <section class="faq-section" aria-labelledby="faq-title">
     <div class="inner">
       <h2 id="faq-title" class="faq-title">자주 묻는 질문</h2>
@@ -854,6 +863,9 @@ main:focus { outline: none; }
       <source type="image/webp" srcset="logo-header-500.webp">
       <img src="logo-header-500.png" width="500" height="150" loading="lazy" decoding="async" alt="PC365 로고">
     </picture></a>
+    <nav class="foot-nav" aria-label="사이트 메뉴">
+      <a href="/">성인PC 창업</a><a href="/jinsang/">진상 대응</a><a href="/danso/">단속 대비</a><a href="/yoyul/">요율·요금제</a><a href="/singo/">진상 신고</a>
+    </nav>
     <p class="foot-info">상호 : PC365 &nbsp;&middot;&nbsp; 성인PC 창업 상담 &middot; 매장 구성 &middot; 운영 방향 컨설팅<br>상담 : <a href="https://t.me/pc365s" target="_blank" rel="noopener">텔레그램 @pc365s</a><br>당신의 새로운 시작을 응원합니다.<br>COPYRIGHT PC365 ALL RIGHTS RESERVED.</p>
   </div>
 </footer>
