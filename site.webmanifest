@@ -1,7 +1,7 @@
 {
-  "name": "피씨365 - 성인PC 매물·창업 정보",
-  "short_name": "피씨365",
-  "description": "전국 성인피씨·성인PC방 매매·양도·임대·창업 정보 플랫폼",
+  "name": "PC365 - 성인PC 창업 상담",
+  "short_name": "PC365",
+  "description": "성인PC 창업 상담 · 매장 구성 · 운영 방향 컨설팅",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

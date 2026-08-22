@@ -4,5 +4,5 @@ Allow: /
 User-Agent: *
 Allow: /
 
-Host: https://SET-DOMAIN-HERE
-Sitemap: https://SET-DOMAIN-HERE/sitemap.xml
+Host: https://pc365.name
+Sitemap: https://pc365.name/sitemap.xml
