@@ -1,0 +1,8 @@
+User-Agent: Yeti
+Allow: /
+
+User-Agent: *
+Allow: /
+
+Host: https://SET-DOMAIN-HERE
+Sitemap: https://SET-DOMAIN-HERE/sitemap.xml

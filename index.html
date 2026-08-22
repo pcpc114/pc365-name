@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>성인피씨·성인PC 매물·창업 정보 | 피씨365</title>
+<meta name="description" content="전국 성인피씨·성인피시·성인PC 매물과 창업 정보. 권리금·보증금·월세 비교, 허가 구역 조회까지 피씨365에서 확인하세요.">
+<meta name="keywords" content="성인피씨, 성인피시, 성인피씨창업, 성인PC, 성인PC방, 피씨365, 피씨365닷컴, 성인피씨 매물, 성인PC 창업, 성인피씨 양도">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="피씨365">
+
+<!-- 검색엔진 소유권 확인 -->
+<link rel="canonical" href="https://SET-DOMAIN-HERE/">
+<link rel="alternate" hreflang="ko" href="https://SET-DOMAIN-HERE/">
+<link rel="alternate" hreflang="x-default" href="https://SET-DOMAIN-HERE/">
+
+<!-- 파비콘 / 앱 아이콘 / PWA -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#000000">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="피씨365">
+<meta property="og:title" content="성인피씨·성인PC 매물·창업 정보 | 피씨365">
+<meta property="og:description" content="전국 성인피씨·성인PC 매물, 양도·임대, 창업 정보를 한 곳에서. 성인피씨창업 가이드와 매물 정보를 피씨365.COM에서 확인하세요.">
+<meta property="og:url" content="https://SET-DOMAIN-HERE/">
+<meta property="og:image" content="https://SET-DOMAIN-HERE/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="성인피씨·성인PC방 매물·창업 정보 피씨365">
+<meta property="og:locale" content="ko_KR">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="성인피씨·성인PC 매물·창업 정보 | 피씨365">
+<meta name="twitter:description" content="전국 성인피씨·성인PC 매물·양도·창업 정보 플랫폼, 피씨365.COM">
+<meta name="twitter:image" content="https://SET-DOMAIN-HERE/og-image.jpg">
+<meta name="twitter:image:alt" content="성인피씨·성인PC방 매물·창업 정보 피씨365">
+
+<!-- LCP 이미지(히어로 포스터) 프리로드: 최우선 다운로드 -->
+<link rel="preload" as="image" type="image/webp" href="download-520.webp"
+      imagesrcset="download-520.webp 520w, download.webp 825w"
+      imagesizes="(max-width: 846px) 380px, 520px" fetchpriority="high">
+
+<!-- 본문 폰트 프리로드 (서브셋 후 각 40KB) : 글자 늦게 뜨는 현상 방지 -->
+<link rel="preload" as="font" type="font/woff2" href="fonts/subset-MaplestoryLight.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/subset-MaplestoryBold.woff2" crossorigin>
+
+<!-- 외부 폰트 요청 없음: Maplestory는 로컬, 예비 폰트는 기기 내장 폰트 사용 -->
+
+<style>
+/* ===================================================================
+   피씨365 - 다크 테마 PC 커뮤니티 페이지 (원본 스킨 디자인 실측 반영)
+   * 실제 브라우저 측정값 기준:
+     - 콘텐츠 폭 1280px, 헤더 211px(로고 중앙 + home 중앙)
+     - 히어로: padding 100/80, 타이틀 Maplestory 40px, 버튼 10x30 border 1px #bbb
+     - 텍스트 섹션: 상하 110px, 카드 2단(간격0), 카드 패딩 80px
+       · 왼쪽 카드 = 흰색 배경 #fff / 글씨 #393737
+       · 오른쪽 카드 = 진회색 배경 #393737 / 글씨 #fff
+     - 폰트: Maplestory(넥슨 메이플스토리체) 로컬 로드
+=================================================================== */
+
+/* --- Maplestory 웹폰트 (fonts/ 폴더에 로컬 저장) --- */
+@font-face {
+  font-family: 'Maplestory';
+  src: url('fonts/subset-MaplestoryLight.woff2') format('woff2'),
+       url('fonts/subset-MaplestoryLight.woff') format('woff');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Maplestory';
+  src: url('fonts/subset-MaplestoryBold.woff2') format('woff2'),
+       url('fonts/subset-MaplestoryBold.woff') format('woff');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  font-weight: 400;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+ul, li { list-style: none; }
+img { max-width: 100%; display: block; }
+picture { display: contents; }   /* <picture> 래퍼가 레이아웃에 영향 주지 않도록 */
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+/* 접근성: 키보드 포커스 링 + 본문 바로가기 링크 */
+a:focus-visible, button:focus-visible { outline: 3px solid #ecd9b0; outline-offset: 2px; border-radius: 2px; }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 300; background: #ecd9b0; color: #000; padding: 10px 18px; border-radius: 0 0 6px 0; font-weight: 700; }
+.skip-link:focus { left: 0; }
+main:focus { outline: none; }
+
+:root {
+  --font: 'Maplestory', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --max-width: 1280px;
+  --header-h: 211px;       /* 원본 실측 헤더 높이 */
+  --card-dark: #393737;    /* 원본 오른쪽 카드 배경 = 글씨색 */
+}
+
+.inner { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+
+/* ===================================================================
+   HEADER (원본 header_A032: 검정 고정 헤더 / 로고 중앙 + home 중앙)
+=================================================================== */
+#header {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+  background: #000;
+}
+.header-inner {
+  position: relative;
+  max-width: var(--max-width); margin: 0 auto;
+  height: var(--header-h);
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  gap: 0; padding: 48px 20px 0;      /* 이미지 로고 기준 상단 여백 */
+}
+.logo a { display: inline-flex; align-items: center; }
+.logo img { height: 78px; width: auto; display: block; }   /* 헤더 로고 이미지 */
+/* home 메뉴 (원본 GnbMenu: Maplestory 16px 흰색 중앙) */
+.gnb { margin-top: 26px; }
+.gnb a { font-family: var(--font); font-weight: 400; font-size: 16px; color: #fff; padding: 6px 4px; }
+.gnb a:hover { opacity: .7; }
+
+/* 햄버거 (원본과 동일: 데스크탑 숨김 / 모바일에서만 표시) */
+.hamburger {
+  position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+  display: none; flex-direction: column; align-items: center; justify-content: center;
+  gap: 6px; padding: 6px;
+  min-width: 48px; min-height: 48px;   /* 모바일 터치 영역 권장치(48x48) 확보 */
+}
+.hamburger span { display: block; width: 28px; height: 2px; background: #fff; }
+
+.header-spacer { height: var(--header-h); }
+
+/* ===================================================================
+   ASIDE (모바일 햄버거 → 우측 슬라이드 메뉴)
+=================================================================== */
+#aside {
+  position: fixed; top: 0; right: 0; width: 280px; max-width: 85vw; height: 100%;
+  background: #0a0a0a; border-left: 1px solid #222;
+  transform: translateX(100%); transition: transform .3s ease; z-index: 200;
+  padding: 24px; overflow-y: auto;
+}
+#aside.open { transform: translateX(0); }
+.aside-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.aside-head b { font-family: var(--font); font-weight: 700; font-size: 20px; }
+.aside-head .close { font-size: 24px; padding: 8px; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+.aside-menu li a { display: block; padding: 15px 4px; border-bottom: 1px solid #222; font-size: 16px; }
+#dim { position: fixed; inset: 0; background: rgba(0,0,0,.6); opacity: 0; visibility: hidden; transition: opacity .3s; z-index: 199; }
+#dim.open { opacity: 1; visibility: visible; }
+
+/* ===================================================================
+   HERO (원본 text_C003: 검정 / padding 100·80 / 중앙 정렬)
+=================================================================== */
+/* HERO + 이미지 배너 좌우 배치 컨테이너 */
+.hero-row {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(55% 75% at 80% 28%, rgba(201,162,106,.20), rgba(0,0,0,0) 62%),
+    radial-gradient(48% 68% at 16% 22%, rgba(201,162,106,.10), rgba(0,0,0,0) 58%),
+    #000;
+  display: flex; flex-wrap: wrap;
+  align-items: flex-start; justify-content: center; gap: 64px;
+  max-width: 1240px; margin: 0 auto; padding: 100px 24px;
+}
+.hero-row .hero { flex: 1 1 460px; padding: 0; text-align: left; margin-top: 40px; }
+.hero-row .hero .inner { max-width: 560px; margin-left: auto; }
+.hero-row .image-banner { flex: 0 1 560px; padding: 0; margin-top: -64px; }
+
+.hero { background: transparent; text-align: center; }
+.hero h1 { font-family: var(--font); font-weight: 400; color: #fff; line-height: 1.3; }
+.hero h1 .l1 {
+  font-size: 66px; letter-spacing: 1px;
+  background: linear-gradient(180deg, #fbf1d4 0%, #e7c98a 46%, #bd914e 100%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.hero h1 .l2 { display: inline-block; margin-top: 16px; font-size: 28px; color: #d8cfbc; line-height: 1.5; }
+
+/* 히어로 상단 소제목(eyebrow) */
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  margin-bottom: 22px; font-size: 14px; letter-spacing: 2px; color: #d9c6a0;
+}
+.hero-eyebrow::before { content: ""; width: 30px; height: 1px; background: #c9a26a; }
+
+/* 히어로 특징 칩 */
+.hero-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+.hero-chips li {
+  font-size: 14px; color: #e3d3b0;
+  padding: 8px 16px; border: 1px solid rgba(201,162,106,.35);
+  border-radius: 999px; background: rgba(201,162,106,.07);
+}
+
+.hero-btns { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-start; }
+.hero-btns a {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 15px 40px; border: 1px solid rgba(201,162,106,.55); border-radius: 3px;
+  font-family: var(--font); font-weight: 400; font-size: 18px; color: #ecd9b0;
+  transition: all .2s;
+}
+.hero-btns a:hover { background: rgba(201,162,106,.12); border-color: #c9a26a; }
+.hero-btns a.primary {
+  border-color: #c9a26a; color: #1c1305; font-weight: 700;
+  background: linear-gradient(180deg, #ecd09a 0%, #c9a26a 100%);
+}
+.hero-btns a.primary:hover {
+  background: linear-gradient(180deg, #f4dcab 0%, #d5b078 100%);
+  box-shadow: 0 8px 28px rgba(201,162,106,.4);
+}
+
+/* 이미지 배너 */
+.image-banner { background: transparent; text-align: center; padding: 0; }
+.image-banner .bb-logo {
+  display: block; margin: 0 auto; max-width: 520px; width: 100%; height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px rgba(201,162,106,.25), 0 30px 70px rgba(0,0,0,.65), 0 0 60px rgba(201,162,106,.18);
+}
+.image-banner .ph {
+  max-width: 600px; margin: 0 auto; min-height: 360px;
+  background: #0c0c0c; border: 1px dashed #333;
+  display: flex; align-items: center; justify-content: center; color: #666; font-size: 14px;
+}
+/* 브랜드 배너 (깨끗한 합법 배너) */
+.brand-banner {
+  max-width: 780px; margin: 0 auto; padding: 56px 28px; text-align: center;
+  border: 1px solid rgba(201,162,106,.35); border-radius: 8px;
+  background: radial-gradient(120% 130% at 50% 0%, rgba(201,162,106,.14), rgba(0,0,0,0) 62%);
+}
+.brand-banner .bb-logo { height: 92px; width: auto; margin: 0 auto 22px; }
+.brand-banner .bb-tag { font-family: var(--font); font-size: 18px; color: #d9c6a0; margin-bottom: 28px; line-height: 1.5; }
+.brand-banner .bb-btn {
+  display: inline-block; padding: 12px 34px; border: 1px solid #c9a26a; border-radius: 2px;
+  font-family: var(--font); font-size: 16px; color: #ecd9b0; transition: all .2s;
+}
+.brand-banner .bb-btn:hover { background: #c9a26a; color: #000; }
+
+/* ===================================================================
+   TEXT SECTIONS (원본 text_L008 / layout_N2_01 T2)
+   검정 / 상하 110px / 2단 카드(간격0) / 카드 패딩 80px
+=================================================================== */
+.text-section { background: #000; padding: 110px 0; }
+.text-section .cols { display: flex; }        /* 카드 사이 간격 없음 (원본) */
+.text-section .col { flex: 1; padding: 80px; }
+.text-section .col.left  { background: #fff; color: var(--card-dark); }
+.text-section .col.right { background: var(--card-dark); color: #fff; }
+.text-section h2 { font-family: var(--font); font-weight: 400; font-size: 18px; margin-bottom: 22px; color: inherit; }
+.text-section p  { font-family: var(--font); font-weight: 400; font-size: 16px; line-height: 1.5; text-align: justify; color: inherit; }
+
+/* FAQ 섹션 (다크·골드 테마) */
+.faq-section { background: #000; padding: 90px 0 100px; border-top: 1px solid rgba(201,162,106,.18); }
+.faq-section .faq-title { font-family: var(--font); font-weight: 700; font-size: 30px; color: #ecd9b0; text-align: center; margin-bottom: 44px; }
+.faq-list { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+.faq-item { border: 1px solid rgba(201,162,106,.28); border-radius: 10px; background: rgba(201,162,106,.05); padding: 24px 26px; }
+.faq-item h3 { font-family: var(--font); font-weight: 700; font-size: 18px; color: #e7c98a; margin-bottom: 12px; }
+.faq-item p { font-family: var(--font); font-weight: 400; font-size: 15px; line-height: 1.7; color: #cfc4b0; }
+
+/* ===================================================================
+   FOOTER (원본 footer_A025는 로고형/거의 비표시 → 미니멀 검정)
+=================================================================== */
+/* 원본 실측: 검정 배경 / 상단 구분선 1px #dedede / 로고 500폭 중앙 / 상하 여백 ~42px */
+#footer { background: #000; }
+#footer .inner { max-width: var(--max-width); margin: 0 auto; border-top: 1px solid #dedede; padding: 42px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+#footer .foot-logo img { width: 500px; max-width: 88%; height: auto; display: block; }
+#footer .foot-info { font-size: 12px; color: #888; text-align: center; line-height: 1.7; }
+
+/* TOP 버튼 */
+#topBtn {
+  position: fixed; right: 24px; bottom: 24px; width: 46px; height: 46px;
+  border-radius: 50%; background: #fff; color: #000; font-size: 18px;
+  z-index: 90; opacity: 0; visibility: hidden; transition: opacity .25s;
+}
+#topBtn.show { opacity: 1; visibility: visible; }
+
+/* ===================================================================
+   배너 팝업 (접속 시 자동 노출 / 오늘 하루 보지 않기)
+   * 영상 비율 1000x1600(=0.625). 화면이 낮으면 박스 폭을 줄여 비율을 유지한다
+=================================================================== */
+#popup { position: fixed; inset: 0; z-index: 250; display: none; align-items: center; justify-content: center; padding: 16px; }
+#popup.open { display: flex; }
+.popup-dim { position: absolute; inset: 0; background: rgba(0,0,0,.78); }
+.popup-box {
+  position: relative; width: 100%; max-width: 360px;
+  display: flex; flex-direction: column;
+  background: #0a0a0a; border: 1px solid #222; border-radius: 10px; overflow: hidden;
+  animation: popup-in .28s ease both;
+}
+@supports (height: 100dvh) {
+  /* 세로가 짧은 화면에서 잘리지 않도록: 남는 높이 x 0.625 만큼만 넓힌다 */
+  .popup-box { max-width: min(360px, calc((100dvh - 100px) * 0.625)); }
+}
+@keyframes popup-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .popup-box { animation: none; } }
+.popup-box:focus { outline: none; }   /* 열릴 때 포커스만 옮기고 링은 숨긴다(main 과 동일) */
+.popup-close {
+  position: absolute; top: 4px; right: 4px; z-index: 2;
+  width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center;
+  font-size: 26px; line-height: 1; color: #fff; background: rgba(0,0,0,.5); border-radius: 50%;
+}
+.popup-close:focus-visible { border-radius: 50%; }   /* 원형 버튼에 맞는 포커스 링 */
+.popup-media { display: block; position: relative; }
+.popup-media video { display: block; width: 100%; height: auto; aspect-ratio: 1000 / 1600; background: #000; }
+/* 자동재생이 막힌 기기에서만 노출되는 재생 버튼 */
+.popup-play {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 3;
+  width: 66px; height: 66px; border-radius: 50%; padding-left: 5px;
+  background: rgba(0,0,0,.55); border: 2px solid rgba(255,255,255,.85);
+  color: #fff; font-size: 24px; line-height: 1;
+  display: none; align-items: center; justify-content: center;
+}
+.popup-play.show { display: inline-flex; }
+.popup-foot { flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-left: 14px; border-top: 1px solid #222; }
+.popup-foot label { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; font-size: 14px; color: #bbb; cursor: pointer; }
+.popup-foot input { width: 16px; height: 16px; accent-color: #ecd9b0; cursor: pointer; }
+.popup-foot .popup-dismiss { min-height: 48px; padding: 0 18px; font-size: 15px; font-weight: 700; color: #ecd9b0; }
+
+/* ===================================================================
+   반응형 (원본 브레이크포인트 846px 기준)
+=================================================================== */
+@media (max-width: 846px) {
+  :root { --header-h: 64px; }
+  .header-inner { flex-direction: row; align-items: center; justify-content: flex-start; gap: 0; padding: 0 20px; }
+  .logo img { height: 40px; }
+  .gnb { margin-top: 0; }
+  .gnb { display: none; }
+  .hamburger { display: flex; }
+  .hero h1 .l1 { font-size: 42px; }
+  .hero h1 .l2 { font-size: 21px; }
+  .text-section { padding: 60px 0; }
+  .faq-section { padding: 60px 0 70px; }
+  .faq-section .faq-title { font-size: 24px; margin-bottom: 30px; }
+  .faq-item { padding: 20px 20px; }
+  .text-section .cols { flex-direction: column; }
+  .text-section .col { padding: 40px 24px; }
+  .hero-row { gap: 32px; padding: 48px 20px; }
+  .hero-row .hero { text-align: center; }
+  .hero-row .hero .inner { margin: 0 auto; }
+  .hero-row .hero .hero-btns { justify-content: center; }
+  .hero-row .hero .hero-chips { justify-content: center; }
+  .hero-row .hero { margin-top: 0; }
+  .hero-row .image-banner { margin-top: 0; }
+  .image-banner .ph { min-height: 240px; }
+  .image-banner .bb-logo { max-width: 380px; }
+  .brand-banner { padding: 40px 20px; }
+  .brand-banner .bb-logo { height: 60px; }
+  .brand-banner .bb-tag { font-size: 15px; }
+}
+</style>
+
+<!-- 구조화 데이터 (JSON-LD) : 리치 @graph (Organization/WebSite/WebPage/BreadcrumbList/Service/FAQPage) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://SET-DOMAIN-HERE/#organization",
+      "name": "피씨365",
+      "alternateName": ["피씨365.COM"],
+      "url": "https://SET-DOMAIN-HERE/",
+      "description": "전국 성인피씨·성인PC방 매매·양도·임대·창업 정보를 제공하는 정보 플랫폼",
+      "sameAs": ["https://www.xn--365-vn8n965d.com/"],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://SET-DOMAIN-HERE/#logo",
+        "url": "https://SET-DOMAIN-HERE/logo-header.png",
+        "contentUrl": "https://SET-DOMAIN-HERE/logo-header.png",
+        "width": 877,
+        "height": 263,
+        "caption": "피씨365"
+      },
+      "image": { "@id": "https://SET-DOMAIN-HERE/#logo" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://SET-DOMAIN-HERE/#website",
+      "name": "피씨365",
+      "alternateName": ["성인피씨", "성인피시", "성인PC", "성인피씨창업", "피씨365.COM"],
+      "url": "https://SET-DOMAIN-HERE/",
+      "description": "전국 성인피씨·성인PC 매물, 양도·임대, 성인피씨창업 정보 플랫폼",
+      "inLanguage": "ko-KR",
+      "publisher": { "@id": "https://SET-DOMAIN-HERE/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://SET-DOMAIN-HERE/#webpage",
+      "url": "https://SET-DOMAIN-HERE/",
+      "name": "성인피씨·성인PC 매물·창업 정보 | 피씨365",
+      "description": "피씨365(피씨365.COM)는 전국 성인피씨·성인피시·성인PC 매물, 양도·임대, 성인피씨창업 정보를 제공합니다.",
+      "inLanguage": "ko-KR",
+      "isPartOf": { "@id": "https://SET-DOMAIN-HERE/#website" },
+      "about": { "@id": "https://SET-DOMAIN-HERE/#organization" },
+      "primaryImageOfPage": { "@id": "https://SET-DOMAIN-HERE/#primaryimage" },
+      "breadcrumb": { "@id": "https://SET-DOMAIN-HERE/#breadcrumb" },
+      "datePublished": "2026-07-23",
+      "dateModified": "2026-07-23"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://SET-DOMAIN-HERE/#primaryimage",
+      "url": "https://SET-DOMAIN-HERE/download.jpg",
+      "contentUrl": "https://SET-DOMAIN-HERE/download.jpg",
+      "width": 825,
+      "height": 1024,
+      "caption": "성인피씨·성인PC방 매물·창업 정보 피씨365"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://SET-DOMAIN-HERE/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://SET-DOMAIN-HERE/" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "성인PC방 매물·양도·임대·창업 정보",
+      "serviceType": "성인PC방 매매·양도·임대·창업 정보 플랫폼",
+      "url": "https://SET-DOMAIN-HERE/",
+      "provider": { "@id": "https://SET-DOMAIN-HERE/#organization" },
+      "areaServed": { "@type": "Country", "name": "대한민국" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://SET-DOMAIN-HERE/#faq",
+      "isPartOf": { "@id": "https://SET-DOMAIN-HERE/#webpage" },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "성인PC방 창업 비용은 얼마나 드나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "창업 비용은 매장 규모와 좌석 수, 지역, 권리금·보증금·월세, 인테리어와 PC·기기 사양에 따라 달라집니다. 피씨365에서는 지역별 실매물의 권리금·보증금·월세를 비교하고 투자금·월 고정비 계산기로 예상 비용을 미리 확인하실 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "성인PC 매물의 권리금과 시세는 어떻게 확인하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "피씨365는 매물별 권리금·보증금·월세 등 핵심 조건을 투명하게 정리해 제공하며, 지역별 시세와 비교해 적정한 가격인지 판단하실 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "성인피씨 양도·임대 절차는 어떻게 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "일반적으로 매물 확인 → 조건(권리금·보증금·월세) 비교 → 현장 확인 → 계약 순으로 진행됩니다. 계약 전 허가 가능 구역과 규제·규격 기준을 반드시 확인하시는 것이 좋습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "학교 정화구역에서도 성인PC방 허가가 가능한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "학교 정화구역 등 위치에 따라 규제가 적용될 수 있어 계약 전 확인이 필요합니다. 피씨365에서 위치별 허가 가능 구역 정보를 제공하니 사전에 조회해 보세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "피씨365는 어떤 서비스인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "피씨365(피씨365.COM)는 전국 성인피씨·성인PC방의 매매·양도·임대·창업 정보를 한곳에서 제공하는 정보 플랫폼입니다. 실매물 정보와 창업 가이드, 지역별 시세, 커뮤니티를 함께 제공합니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">본문 바로가기</a>
+
+<!-- ============================ HEADER ============================ -->
+<header id="header">
+  <div class="header-inner">
+    <p class="logo"><a href="/"><picture>
+      <source type="image/webp" srcset="logo-header-260.webp 1x, logo-header-500.webp 2x">
+      <img src="logo-header-260.png" srcset="logo-header-260.png 1x, logo-header-500.png 2x" width="260" height="78" decoding="async" alt="성인피씨·성인PC 창업정보 플랫폼 피씨365 로고">
+    </picture></a></p>
+    <nav class="gnb" aria-label="주 메뉴"><a href="/">home</a></nav>
+    <!-- 햄버거: 원본과 동일하게 데스크탑에서는 숨김, 모바일에서만 표시 -->
+    <button class="hamburger" id="asideOpen" aria-label="메뉴 열기" aria-expanded="false" aria-controls="aside">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="header-spacer"></div>
+
+<!-- ============================ ASIDE (모바일) ============================ -->
+<aside id="aside">
+  <div class="aside-head">
+    <b>MENU</b>
+    <button class="close" id="asideClose" aria-label="닫기">×</button>
+  </div>
+  <nav aria-label="모바일 메뉴">
+    <ul class="aside-menu">
+      <li><a href="/">home</a></li>
+    </ul>
+  </nav>
+</aside>
+<div id="dim"></div>
+
+<!-- ============================ MAIN ============================ -->
+<main id="main" tabindex="-1">
+
+  <!-- HERO + 이미지 배너 (좌우 배치) -->
+  <div class="hero-row">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="inner">
+        <span class="hero-eyebrow">전국 성인PC 정보 플랫폼</span>
+        <h1><span class="l1">피씨365</span><br><span class="l2">전국 성인피씨·성인PC방 매매·양도·창업 정보 · 피씨365.COM</span></h1>
+        <ul class="hero-chips">
+          <li>전국 17개 시·도</li>
+          <li>매매 · 양도 · 임대</li>
+          <li>권리금 · 보증금 투명 공개</li>
+        </ul>
+        <div class="hero-btns">
+          <a class="primary" href="https://www.xn--365-vn8n965d.com/trades">매물 보기</a>
+          <a href="https://www.xn--365-vn8n965d.com/guide">창업 안내</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-banner">
+        <picture>
+          <source type="image/webp" srcset="download-520.webp 520w, download.webp 825w"
+                  sizes="(max-width: 846px) 380px, 520px">
+          <img class="bb-logo" src="download-520.jpg"
+               srcset="download-520.jpg 520w, download.jpg 825w"
+               sizes="(max-width: 846px) 380px, 520px"
+               width="825" height="1024" fetchpriority="high" decoding="async" alt="피씨365 성인PC방 매물·양도·창업 정보 안내 포스터">
+        </picture>
+    </section>
+  </div>
+
+  <!-- ================= 2단 카드 텍스트 섹션 (피씨365.COM 실제 서비스 기준 홍보글) ================= -->
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>전국 성인피씨·성인PC방 정보, 피씨365.COM 한 곳에서</h2>
+          <p>전국의 성인피씨·성인PC방 매매·양도·임대·창업 정보를 한눈에 확인할 수 있는 전문 정보 플랫폼입니다. 여기저기 흩어져 있던 성인피시 매물 정보를 한곳에 모아, 필요한 정보를 빠르고 편리하게 찾으실 수 있도록 도와드립니다.</p>
+        </div>
+        <div class="col right">
+          <h2>전국 17개 시·도 성인피씨 실매물</h2>
+          <p>서울·경기부터 지방까지 전국 각 지역의 성인PC방 매물을 지역별로 검색하고 비교하실 수 있습니다. 원하시는 조건에 맞는 매물을 손쉽게 찾아, 발품 팔지 않고도 한 번에 확인해 보세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>성인피씨 매매·양도·임대 매물 한눈에</h2>
+          <p>현재 등록된 다양한 매물을 조건별로 확인하실 수 있습니다. 매매, 양도, 임대까지 원하시는 거래 형태에 맞춰 정보를 정리해 제공하여, 선택의 폭을 넓혀드립니다.</p>
+        </div>
+        <div class="col right">
+          <h2>권리금·보증금·월세 투명 공개</h2>
+          <p>매물별 권리금, 보증금, 월세 등 핵심 조건을 투명하게 정리해 제공합니다. 숨은 비용 걱정 없이 정확한 정보를 바탕으로, 합리적인 판단을 내리실 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>허가 가능 구역 조회</h2>
+          <p>학교 정화구역 등 위치에 따른 규제를 사전에 확인하실 수 있도록 허가 가능 구역 정보를 제공합니다. 계약 전 반드시 확인하여, 문제없이 안전하게 시작하세요.</p>
+        </div>
+        <div class="col right">
+          <h2>규제·규격 정보 제공</h2>
+          <p>출입문 규격 등 매장 운영에 필요한 규제·규격 기준을 정리해 안내합니다. 성인피씨 운영에 필요한 기준을 미리 파악하여, 처음부터 올바르게 준비하실 수 있도록 정확한 정보를 공유합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>성인피씨 창업, 초보도 안심 단계별 가이드</h2>
+          <p>처음 창업하시는 분도 놓치는 것 없이 준비하실 수 있도록 단계별 창업 가이드와 체크리스트를 제공합니다. 성인피씨창업, 무엇부터 시작해야 할지 막막할 때 든든한 길잡이가 되어드립니다.</p>
+        </div>
+        <div class="col right">
+          <h2>투자금·월 고정비 계산기</h2>
+          <p>예상 투자금과 월 고정비, 필요 자금을 미리 계산해보실 수 있습니다. 감이 아닌 데이터로, 부담 없이 창업 계획을 세우고 현명하게 결정하세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>최신 정책·규제 소식</h2>
+          <p>관련 정책과 규제, 소상공인 지원 사업 등 업계에 꼭 필요한 최신 소식을 빠르게 전해드립니다. 성인PC방 운영에 영향을 주는 제도 변화를 놓치지 않도록 정확한 정보를 정리해 공유합니다.</p>
+        </div>
+        <div class="col right">
+          <h2>실전 운영 노하우 공유</h2>
+          <p>실제 운영자들의 생생한 경험과 노하우를 커뮤니티에서 함께 나눕니다. 혼자 고민하지 마시고, 검증된 정보로 시행착오를 줄이며 안정적으로 운영해 보세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>회원과 함께하는 커뮤니티</h2>
+          <p>성인피씨 운영자와 예비 창업자 간의 정보 공유와 소통을 가장 중요하게 생각합니다. 궁금한 점을 묻고 답하며, 서로의 경험을 나누는 건강하고 활발한 커뮤니티를 함께 만들어갑니다.</p>
+        </div>
+        <div class="col right">
+          <h2>운영 리스크 정보 공유</h2>
+          <p>매장을 운영하며 겪을 수 있는 다양한 상황과 리스크 정보를 회원들이 함께 공유합니다. 미리 알고 대비하면, 예상치 못한 문제도 한결 수월하게 대응하실 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>안전하고 투명한 거래</h2>
+          <p>검증된 성인피씨 매물 정보와 투명한 조건 공개로 안심하고 거래하실 수 있습니다. 신뢰를 최우선으로, 서로가 만족하는 건전한 거래 문화를 지향합니다.</p>
+        </div>
+        <div class="col right">
+          <h2>지역별 시세 참고</h2>
+          <p>주변 시세와 조건을 비교하여 적정한 가격인지 판단하실 수 있도록 도와드립니다. 정확한 기준으로, 손해 없는 합리적인 거래를 시작해 보세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>모바일 앱으로 언제 어디서나</h2>
+          <p>App Store와 Google Play에서 피씨365 앱을 설치하시면 이동 중에도 매물과 정보를 편리하게 확인하실 수 있습니다. 원하는 정보를 손안에서 간편하게 만나보세요.</p>
+        </div>
+        <div class="col right">
+          <h2>실시간 업데이트</h2>
+          <p>새로운 매물과 소식이 실시간으로 업데이트됩니다. 좋은 기회를 놓치지 않도록, 가장 빠른 성인피씨 매물 정보를 놓치지 마세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>믿을 수 있는 정보 플랫폼</h2>
+          <p>정확하고 검증된 성인PC방 정보만을 제공하기 위해 노력합니다. 과장 없이 사실에 기반한 정보로, 회원 여러분이 신뢰할 수 있는 기준을 만들어갑니다.</p>
+        </div>
+        <div class="col right">
+          <h2>개인정보 보호와 신뢰</h2>
+          <p>회원 여러분의 개인정보를 소중히 여기며 관련 규정을 준수합니다. 신뢰를 최우선 가치로 삼아, 안심하고 이용하실 수 있는 투명한 서비스를 약속드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-section">
+    <div class="inner">
+      <div class="cols">
+        <div class="col left">
+          <h2>문의 및 제휴 안내</h2>
+          <p>이용 관련 궁금하신 점이나 매물 등록·제휴 문의는 언제든 환영합니다. 피씨365.COM 고객센터로 연락 주시면 신속하고 친절하게 안내해 드리겠습니다.</p>
+        </div>
+        <div class="col right">
+          <h2>지금 피씨365.COM과 함께하세요</h2>
+          <p>전국 성인피씨·성인PC방 정보의 기준이 되겠습니다. 지금 바로 원하시는 매물과 창업 정보를 편리하게 확인해 보세요. 여러분의 현명한 선택을 위해 늘 최선을 다하겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 자주 묻는 질문 (FAQ) — 구조화 데이터 FAQPage와 텍스트 일치 ================= -->
+  <section class="faq-section" aria-labelledby="faq-title">
+    <div class="inner">
+      <h2 id="faq-title" class="faq-title">자주 묻는 질문</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>성인PC방 창업 비용은 얼마나 드나요?</h3>
+          <p>창업 비용은 매장 규모와 좌석 수, 지역, 권리금·보증금·월세, 인테리어와 PC·기기 사양에 따라 달라집니다. 피씨365에서는 지역별 실매물의 권리금·보증금·월세를 비교하고 투자금·월 고정비 계산기로 예상 비용을 미리 확인하실 수 있습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>성인PC 매물의 권리금과 시세는 어떻게 확인하나요?</h3>
+          <p>피씨365는 매물별 권리금·보증금·월세 등 핵심 조건을 투명하게 정리해 제공하며, 지역별 시세와 비교해 적정한 가격인지 판단하실 수 있습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>성인피씨 양도·임대 절차는 어떻게 되나요?</h3>
+          <p>일반적으로 매물 확인 → 조건(권리금·보증금·월세) 비교 → 현장 확인 → 계약 순으로 진행됩니다. 계약 전 허가 가능 구역과 규제·규격 기준을 반드시 확인하시는 것이 좋습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>학교 정화구역에서도 성인PC방 허가가 가능한가요?</h3>
+          <p>학교 정화구역 등 위치에 따라 규제가 적용될 수 있어 계약 전 확인이 필요합니다. 피씨365에서 위치별 허가 가능 구역 정보를 제공하니 사전에 조회해 보세요.</p>
+        </div>
+        <div class="faq-item">
+          <h3>피씨365는 어떤 서비스인가요?</h3>
+          <p>피씨365(피씨365.COM)는 전국 성인피씨·성인PC방의 매매·양도·임대·창업 정보를 한곳에서 제공하는 정보 플랫폼입니다. 실매물 정보와 창업 가이드, 지역별 시세, 커뮤니티를 함께 제공합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer id="footer">
+  <div class="inner">
+    <a href="/" class="foot-logo"><picture>
+      <source type="image/webp" srcset="logo-header-500.webp">
+      <img src="logo-header-500.png" width="500" height="150" loading="lazy" decoding="async" alt="피씨365 로고">
+    </picture></a>
+    <p class="foot-info">상호 : 피씨365 &nbsp;·&nbsp; 홈페이지 : 피씨365.COM<br>COPYRIGHT © 피씨365 ALL RIGHTS RESERVED.<br>정보 업데이트 : <time datetime="2026-07-23">2026-07-23</time></p>
+  </div>
+</footer>
+
+<!-- TOP 버튼 -->
+<button id="topBtn" aria-label="맨 위로">▲</button>
+
+<!-- ============================ 배너 팝업 ============================ -->
+<div id="popup" role="dialog" aria-modal="true" aria-label="피씨365 안내 배너">
+  <div class="popup-dim" data-popup-close></div>
+  <div class="popup-box" tabindex="-1">
+    <button type="button" class="popup-close" aria-label="팝업 닫기" data-popup-close>×</button>
+    <!-- href 는 아래 스크립트의 LINK 값으로 채워진다 (비어 있으면 클릭해도 이동하지 않음) -->
+    <a class="popup-media" id="popupLink" target="_blank" rel="noopener">
+      <!-- muted+playsinline+autoplay 는 모바일 자동재생의 필수 조건이라 하나라도 빼면 안 된다 -->
+      <!-- poster: 영상이 도착하기 전과 자동재생이 막힌 기기에서 대신 보이는 첫 프레임 -->
+      <video id="popupVideo" width="1000" height="1600" autoplay muted loop playsinline
+             webkit-playsinline disableremoteplayback preload="none"
+             poster="popup-poster.webp"
+             aria-label="피씨365 안내 영상 배너"></video>
+      <!-- 저전력 모드 등으로 자동재생이 막혔을 때만 나타난다 -->
+      <button type="button" class="popup-play" id="popupPlay" aria-label="영상 재생">▶</button>
+    </a>
+    <div class="popup-foot">
+      <label><input type="checkbox" id="popupHide"> 오늘 하루 보지 않기</label>
+      <button type="button" class="popup-dismiss" data-popup-close>닫기</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  var aside = document.getElementById('aside');
+  var dim = document.getElementById('dim');
+  var asideOpen = document.getElementById('asideOpen');
+  asideOpen.addEventListener('click', function(){ aside.classList.add('open'); dim.classList.add('open'); asideOpen.setAttribute('aria-expanded', 'true'); });
+  document.getElementById('asideClose').addEventListener('click', closeAside);
+  dim.addEventListener('click', closeAside);
+  function closeAside(){ aside.classList.remove('open'); dim.classList.remove('open'); asideOpen.setAttribute('aria-expanded', 'false'); }
+
+  var topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 400) topBtn.classList.add('show'); else topBtn.classList.remove('show');
+  });
+  topBtn.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  /* ===== 배너 팝업 =====================================================
+     ▼ 바꿀 값은 이 세 줄뿐 ▼
+       VIDEO   : 배너 영상 파일명
+       LINK    : 배너를 눌렀을 때 이동할 주소. 비워두면 클릭해도 이동하지 않는다
+       VERSION : 배너를 교체할 때 v2, v3... 로 올리면 '오늘 하루 보지 않기'가 초기화된다
+  ===================================================================== */
+  (function(){
+    var VIDEO   = 'popup-banner.mp4';
+    var LINK    = 'https://t.me/korea24s';
+    var VERSION = 'v1';
+
+    var KEY = 'pc365_popup_' + VERSION;
+    var popup = document.getElementById('popup');
+    if (!popup) return;
+
+    // '오늘 하루 보지 않기' 기간이 남아 있으면 영상을 아예 내려받지 않는다
+    try { if (Date.now() < (parseInt(localStorage.getItem(KEY), 10) || 0)) return; } catch(e) {}
+
+    var video = document.getElementById('popupVideo');
+    var link  = document.getElementById('popupLink');
+    var hide  = document.getElementById('popupHide');
+    var playBtn = document.getElementById('popupPlay');
+    var lastFocus = null;
+
+    if (LINK) link.href = LINK; else link.removeAttribute('href');
+
+    /* --- 재생 시도 -------------------------------------------------------
+       모바일에서 자동재생이 막히는 경로가 여러 가지라 한 번만 시도하면 안 된다.
+       막히면 ▶ 버튼을 띄우고, 사용자의 첫 동작·탭 복귀 때 다시 시도한다. */
+    function tryPlay(){
+      video.muted = true;                          // iOS 는 muted 가 풀리면 즉시 막는다
+      var p = video.play();
+      if (p && p.then) p.then(hintOff).catch(hintOn); else hintOff();
+    }
+    function hintOn(){ playBtn.classList.add('show'); }
+    function hintOff(){ playBtn.classList.remove('show'); }
+
+    playBtn.addEventListener('click', function(e){
+      e.preventDefault(); e.stopPropagation();     // 배너 링크로 넘어가지 않게
+      tryPlay();
+    });
+    // 사용자가 화면 어디든 건드리면 다시 시도(제스처가 있으면 대부분 풀린다)
+    ['touchstart', 'pointerdown'].forEach(function(ev){
+      document.addEventListener(ev, function(){ if (video.paused && popup.classList.contains('open')) tryPlay(); }, { passive: true });
+    });
+    // 다른 앱 갔다 돌아오면 멈춰 있는 경우가 있다
+    document.addEventListener('visibilitychange', function(){
+      if (!document.hidden && popup.classList.contains('open') && video.paused) tryPlay();
+    });
+    video.addEventListener('canplay', function(){ if (video.paused) tryPlay(); });
+
+    function onKey(e){
+      if (e.key === 'Escape') { close(); return; }
+      if (e.key !== 'Tab') return;
+      var f = popup.querySelectorAll('button, a[href], input');
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+    function open(){
+      lastFocus = document.activeElement;
+      popup.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      popup.querySelector('.popup-box').focus();
+      document.addEventListener('keydown', onKey);
+    }
+    function close(){
+      if (hide.checked) { try { localStorage.setItem(KEY, String(Date.now() + 86400000)); } catch(e) {} }
+      popup.classList.remove('open');
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+      video.pause();
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    popup.addEventListener('click', function(e){
+      if (e.target.hasAttribute('data-popup-close')) close();
+    });
+
+    // 히어로 이미지(LCP)를 먼저 받게 한 뒤에 영상을 내려받는다.
+    //
+    // ★ 순서 주의: 팝업을 먼저 보이게 한 다음 영상을 물린다.
+    //   display:none 상태에서 load()/play() 를 하면 iOS Safari 가 자동재생을 거부해
+    //   첫 프레임에서 멈춘 것처럼 보인다. 이 두 줄의 순서를 바꾸지 말 것.
+    function start(){
+      open();                             // ← 먼저 렌더 트리에 올린다
+      video.muted = true;                 // 자동재생 허용 조건
+      video.preload = 'auto';
+      video.addEventListener('error', function(){
+        close_silent();                   // 파일이 없거나 코덱을 못 읽으면 팝업을 걷어낸다
+      }, { once: true });
+      video.src = VIDEO;
+      video.load();
+      tryPlay();
+    }
+    function close_silent(){
+      popup.classList.remove('open');
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+    }
+    if (document.readyState === 'complete') start();
+    else window.addEventListener('load', start);
+  })();
+</script>
+
+</body>
+</html>

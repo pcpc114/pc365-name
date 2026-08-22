@@ -1,0 +1,10 @@
+# 수정 전 백업 (로컬 보관용)
+*.bak
+*.bak_*
+
+# 로컬 테스트 전용 — 배포되면 안 됨
+server.js
+.server_url
+_debug*.html
+_test*.html
+_v.html

@@ -1,0 +1,16 @@
+{
+  "name": "피씨365 - 성인PC 매물·창업 정보",
+  "short_name": "피씨365",
+  "description": "전국 성인피씨·성인PC방 매매·양도·임대·창업 정보 플랫폼",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "ko",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
